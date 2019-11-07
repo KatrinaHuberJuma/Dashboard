@@ -1,0 +1,8 @@
+<html>
+    <body>
+        <h1>FLOCK</h1>
+        <% for (var goose of geese) { %>
+        <h1><a href="/geese/<%= goose._id %>">Name: <%= goose.name %></a></h1>
+        <% } %>
+    </body>
+</html>

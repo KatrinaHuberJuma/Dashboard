@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Name: <%= goose.name %></h1>
+        <h1>created: <%= goose.date %></h1>
+
+        <form action="/geese/edit/<%= goose._id %>" method="post">
+            <label for="username">edit name: </label>
+            <input id="username" type="text" name="name" value="<%= goose.name %>">
+            <input type="submit" value="OK">
+        </form>
+    </body>
+</html>
